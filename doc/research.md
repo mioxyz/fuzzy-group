@@ -15,6 +15,10 @@ this algorithm Affinity propagation seems to be similar to what I'm trying to im
   previous members to the potential usurper (but maybe I should do this, but for now it is more
   interesting to have this limitation in place).
 
+- we compare all groups presidents to eachother once more, and then...
+  now that I think of this, it may be a bit redundant to check groups within the same partiion
+  against eachother, we actually can exclude all groups which were in the same partition.
+
 ## A new Algorithm idea
 1. iterate over the dataset and find "large" groups, by not evaluating all combinations of
    all strings, and instead by choosing random pairs of strings.
@@ -34,3 +38,6 @@ this algorithm Affinity propagation seems to be similar to what I'm trying to im
 3. Randomly choose 10% of dataset and compare them to all samples.
 
 4. 
+
+## TODO 
+- next up: usurper algorithm
